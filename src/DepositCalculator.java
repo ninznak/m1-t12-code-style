@@ -22,10 +22,13 @@ public class DepositCalculator {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите сумму вклада в рублях:");
         int amount = scanner.nextInt();
+
         System.out.println("Введите срок вклада в годах:");
         period = scanner.nextInt();
+
         System.out.println("Выберите тип вклада, 1 - вклад с обычным процентом, 2 - вклад с капитализацией:");
         action = scanner.nextInt();
+
         double outVar = 0;
         if (action == 1) outVar = calculateSimplePercent(amount, 0.06, period);
         else if (action == 2) {
