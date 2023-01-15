@@ -22,7 +22,8 @@ public class DepositCalculator {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите сумму вклада в рублях:");
         int amount = scanner.nextInt();
-
+/* Уж не знаю правильно ли мы пробелы после каждого считывания ставим, в теории это не обозначилось с точностью. 
+Но с ними явно читаемость кода выше =) ты молодец) */
         System.out.println("Введите срок вклада в годах:");
         period = scanner.nextInt();
 
