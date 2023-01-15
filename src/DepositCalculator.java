@@ -29,7 +29,10 @@ public class DepositCalculator {
         System.out.println("Выберите тип вклада, 1 - вклад с обычным процентом, 2 - вклад с капитализацией:");
         action = scanner.nextInt();
 
-        double outVar = 0;
+        double outVar = 0; 
+        /*По моему очень скромному опыту, красивый код. Я бы только поменяла название переменной outVar, насколько я поняла 
+        она var от variable , и получается что ее можно расшифровать как исходящая переменная. А ее задача как я понимаю, 
+        показать результат по прибыли по окончанию вклада, и можно было б ее назвать как result или что-то связанное с итоговой прибылью.*/
         if (action == 1) outVar = calculateSimplePercent(amount, 0.06, period);
         else if (action == 2) {
             outVar = calculateComplexPercent(amount, 0.06, period);
